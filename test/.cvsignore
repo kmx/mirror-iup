@@ -1,0 +1,16 @@
+so_locations
+*.dep
+*.wdep
+*.loh
+.plan
+.project
+*.err
+Makefile
+*.make
+iuptestgtk.bat
+iuptest.bat
+iuptestgtk
+iuptest
+iuptest.exe
+iuptestgtk.exe
+iuptest_gtk.bat
