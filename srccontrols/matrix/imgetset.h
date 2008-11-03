@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-void* iMatrixSetCell(Ihandle* ih, int lin, int col, char* v);
+void* iMatrixSetCell(Ihandle* ih, int lin, int col, const char* v);
 char* iMatrixGetCell(Ihandle* ih, int lin, int col);
 
 void  iMatrixSetFocusPosition (Ihandle* ih, const char* v, int call_cb);
