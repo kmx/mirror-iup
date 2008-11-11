@@ -95,6 +95,7 @@ struct _IcontrolData
   cdCanvas* cddbuffer;
   cdCanvas* cdcanvas;
   int redraw;
+  int checkframecolor;
 
   Tlincol lin;
   Tlincol col;
