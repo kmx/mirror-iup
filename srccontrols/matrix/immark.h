@@ -39,9 +39,9 @@ int iMatrixMarkGetMode      (Ihandle* ih);
 int iMatrixMarkFullLin(void);
 int iMatrixMarkFullCol(void);
 
-void *iMatrixMarkSet    (Ihandle* ih, char* v);
+void *iMatrixMarkSet    (Ihandle* ih, const char* v);
 char* iMatrixMarkGet    (Ihandle* ih);
-void *iMatrixMarkSetMode(Ihandle* ih, char* v);
+void *iMatrixMarkSetMode(Ihandle* ih, const char* v);
 
 #ifdef __cplusplus
 }
