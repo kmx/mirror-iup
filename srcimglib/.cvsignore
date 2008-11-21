@@ -6,3 +6,4 @@ so_locations
 .project
 *.err
 *.make
+umake_uname.bat
