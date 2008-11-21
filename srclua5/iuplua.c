@@ -888,6 +888,8 @@ int iuplua_open(lua_State * L)
   iupcboxlua_open(L);
 
 #if (IUP_VERSION_NUMBER >= 300000)
+  iupgclua_open(L);
+  iupgetparamlua_open(L);
   iupvallua_open(L);
   iuptabslua_open(L);
 #endif

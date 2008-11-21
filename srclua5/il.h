@@ -39,6 +39,8 @@ int iupspinlua_open (lua_State * L);
 int iupsboxlua_open (lua_State * L);
 
 #if (IUP_VERSION_NUMBER >= 300000)
+void iupgetparamlua_open (lua_State * L);
+int iupgclua_open (lua_State * L);
 int iupvallua_open (lua_State * L);
 int iuptabslua_open (lua_State * L);
 #endif
