@@ -14,19 +14,19 @@ extern "C" {
 
 int diallua_open (void);
 int gaugelua_open (void);
-int gclua_open (void);
-void getparamlua_open (void);
 int masklua_open (void);
 int matrixlua_open (void);
-int sboxlua_open (void);
-int spinlua_open (void);
-int tabslua_open (void);
 int treelua_open (void);
-int vallua_open (void);
 int cblua_open (void);
-int cboxlua_open (void);
 int colorbarlua_open (void);
 int cellslua_open(void);
+
+#if (IUP_VERSION_NUMBER < 300000)
+void iupgetparamlua_open (void);
+int iupgclua_open (void);
+int iupvallua_open (void);
+int iuptabslua_open (void);
+#endif
 
 #ifdef __cplusplus
 }

@@ -8,7 +8,6 @@
 #include <stdlib.h>
 
 #include "iup.h"
-#include "iupgc.h"
 
 #include <lua.h>
 #include <lauxlib.h>

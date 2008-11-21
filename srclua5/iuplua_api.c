@@ -23,7 +23,7 @@
 #include "iup_attrib.h"
 static int Reparent(lua_State *L)
 {
-  lua_pushnumber(L, IupReparent(iuplua_checkihandle(L, 1),
+  lua_pushnumber(L, IupReparent(iuplua_checkihandle(L,1),
                                 iuplua_checkihandle(L,2)));
   return 1;
 }
@@ -37,7 +37,7 @@ int iupIsInternal(const char* name);
 
 static int Append(lua_State *L)
 {
-  iuplua_pushihandle(L, IupAppend(iuplua_checkihandle(L, 1),
+  iuplua_pushihandle(L, IupAppend(iuplua_checkihandle(L,1),
                                   iuplua_checkihandle(L,2)));
   return 1;
 }

@@ -8,7 +8,6 @@
 #include <stdlib.h>
 
 #include "iup.h"
-#include "iupsbox.h"
 
 #include <lua.h>
 
