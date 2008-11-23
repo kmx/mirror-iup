@@ -791,7 +791,7 @@ static int iMatrixCreateMethod(Ihandle* ih, void **params)
   iMatrixAllocMatrix(ih);
 
   /* Create the edit fields */
-  //iMatrixEditCreate(ih);
+  //TODO: iMatrixEditCreate(ih);
 
   /* change the IupCanvas default values */
   iupAttribSetStr(ih, "SCROLLBAR", "YES");
@@ -962,7 +962,7 @@ Iclass* iupMatrixGetClass(void)
   Iclass* ic = iupClassNew(iupCanvasGetClass());
 
   ic->name = "matrix";
-  ic->format = "S"; /* one optional string */
+  ic->format = "A"; /* one optional callback name */
   ic->nativetype = IUP_TYPECANVAS;
   ic->childtype = IUP_CHILDNONE;
   ic->is_interactive = 1;

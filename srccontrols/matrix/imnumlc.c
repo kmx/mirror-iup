@@ -808,7 +808,7 @@ void iMatrixNlcAddCol(Ihandle* ih, const char* v)
   if(base < 0 || base > oldnc)  /* Out of the valid limits for the base */
     return;
 
-  if(ret != 2)  //* If it was identified one number, uses (b) format */
+  if(ret != 2)  /* If it was identified one number, uses (b) format */
     numcol = 1;
 
   /* leave of the edit mode */

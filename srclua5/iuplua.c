@@ -75,8 +75,6 @@ static int report (lua_State *L, int status, int concat_traceback)
   return status;
 }
 
-//#ifdef LUA_VERSION_NUM /* Lua 5.1 */
-
 static int traceback (lua_State *L) {
   lua_getfield(L, LUA_GLOBALSINDEX, "debug");
   if (!lua_istable(L, -1)) {
