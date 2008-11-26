@@ -1,7 +1,6 @@
 so_locations
 *.dep
 *.wdep
-*.loh
 .plan
 .project
 *.err
@@ -12,4 +11,3 @@ iupluad
 iuplua3.bat
 umake_uname.bat
 iuplua3.exe
-loh
