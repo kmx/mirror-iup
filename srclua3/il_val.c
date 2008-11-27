@@ -55,19 +55,19 @@ int vallua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luaval_be64.loh"
+#include "loh/val_be64.loh"
 #else
-#include "loh/luaval_be32.loh"
+#include "loh/val_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luaval_le64w.loh"
+#include "loh/val_le64w.loh"
 #else
-#include "loh/luaval_le64.loh"
+#include "loh/val_le64.loh"
 #endif  
 #else
-#include "loh/luaval.loh"
+#include "loh/val.loh"
 #endif  
 #endif  
 #else

@@ -9,7 +9,6 @@
 
 #include "iup.h"
 #include "iuplua.h"
-#include "iuptabs.h"
 #include "il.h"
 
 

@@ -28,19 +28,19 @@ int sboxlua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luasbox_be64.loh"
+#include "loh/sbox_be64.loh"
 #else
-#include "loh/luasbox_be32.loh"
+#include "loh/sbox_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luasbox_le64w.loh"
+#include "loh/sbox_le64w.loh"
 #else
-#include "loh/luasbox_le64.loh"
+#include "loh/sbox_le64.loh"
 #endif  
 #else
-#include "loh/luasbox.loh"
+#include "loh/sbox.loh"
 #endif  
 #endif  
 #else

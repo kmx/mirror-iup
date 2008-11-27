@@ -276,19 +276,19 @@ int matrixlua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luamatrix_be64.loh"
+#include "loh/matrix_be64.loh"
 #else
-#include "loh/luamatrix_be32.loh"
+#include "loh/matrix_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luamatrix_le64w.loh"
+#include "loh/matrix_le64w.loh"
 #else
-#include "loh/luamatrix_le64.loh"
+#include "loh/matrix_le64.loh"
 #endif  
 #else
-#include "loh/luamatrix.loh"
+#include "loh/matrix.loh"
 #endif  
 #endif  
 #else

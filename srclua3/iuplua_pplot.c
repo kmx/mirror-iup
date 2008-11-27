@@ -217,19 +217,19 @@ int iup_pplotlua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luapplot_be64.loh"
+#include "loh/pplot_be64.loh"
 #else
-#include "loh/luapplot_be32.loh"
+#include "loh/pplot_be32.loh"
 #endif
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luapplot_le64w.loh"
+#include "loh/pplot_le64w.loh"
 #else
-#include "loh/luapplot_le64.loh"
+#include "loh/pplot_le64.loh"
 #endif
 #else
-#include "loh/luapplot.loh"
+#include "loh/pplot.loh"
 #endif
 #endif
 #else

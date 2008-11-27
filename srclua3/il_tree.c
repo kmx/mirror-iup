@@ -261,19 +261,19 @@ int treelua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luatree_be64.loh"
+#include "loh/tree_be64.loh"
 #else
-#include "loh/luatree_be32.loh"
+#include "loh/tree_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luatree_le64w.loh"
+#include "loh/tree_le64w.loh"
 #else
-#include "loh/luatree_le64.loh"
+#include "loh/tree_le64.loh"
 #endif  
 #else
-#include "loh/luatree.loh"
+#include "loh/tree.loh"
 #endif  
 #endif  
 #else

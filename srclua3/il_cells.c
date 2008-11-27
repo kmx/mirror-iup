@@ -128,19 +128,19 @@ int cellslua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luacells_be64.loh"
+#include "loh/cells_be64.loh"
 #else
-#include "loh/luacells_be32.loh"
+#include "loh/cells_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luacells_le64w.loh"
+#include "loh/cells_le64w.loh"
 #else
-#include "loh/luacells_le64.loh"
+#include "loh/cells_le64.loh"
 #endif  
 #else
-#include "loh/luacells.loh"
+#include "loh/cells.loh"
 #endif  
 #endif  
 #else

@@ -1,5 +1,5 @@
 /** \file
- * \brief Bindig of iupgauge to Lua 3.
+ * \brief Bindig of iupdial to Lua 3.
  *
  * See Copyright Notice in iup.h
  * $Id$
@@ -8,45 +8,46 @@
 #include <stdlib.h>
 
 #include "iup.h"
-#include "iupgauge.h"
+#include "iupdial.h"
 
 #include <lua.h>
+#include <lauxlib.h>
 
 #include "iuplua.h"
 #include "il.h"
 #include "il_controls.h"
 
 
-static void CreateGauge(void)
+static void CreateDial(void)
 {
   int tag = (int)lua_getnumber(lua_getglobal("iuplua_tag"));
-  lua_pushusertag(IupGauge(), tag);
+  lua_pushusertag(IupDial(luaL_check_string(1)), tag);
 }
 
-int gaugelua_open(void)
+int diallua_open(void)
 {
-  lua_register("iupCreateGauge", CreateGauge);
+  lua_register("iupCreateDial", CreateDial);
 
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luagauge_be64.loh"
+#include "loh/dial_be64.loh"
 #else
-#include "loh/luagauge_be32.loh"
+#include "loh/dial_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luagauge_le64w.loh"
+#include "loh/dial_le64w.loh"
 #else
-#include "loh/luagauge_le64.loh"
+#include "loh/dial_le64.loh"
 #endif  
 #else
-#include "loh/luagauge.loh"
+#include "loh/dial.loh"
 #endif  
 #endif  
 #else
-  iuplua_dofile("luagauge.lua");
+  iuplua_dofile("luadial.lua");
 #endif
 
   return 1;

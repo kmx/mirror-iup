@@ -51,19 +51,19 @@ int cblua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luacb_be64.loh"
+#include "loh/colorbrowser_be64.loh"
 #else
-#include "loh/luacb_be32.loh"
+#include "loh/colorbrowser_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luacb_le64w.loh"
+#include "loh/colorbrowser_le64w.loh"
 #else
-#include "loh/luacb_le64.loh"
+#include "loh/colorbrowser_le64.loh"
 #endif  
 #else
-#include "loh/luacb.loh"
+#include "loh/colorbrowser.loh"
 #endif  
 #endif  
 #else

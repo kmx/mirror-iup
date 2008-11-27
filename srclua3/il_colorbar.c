@@ -75,19 +75,19 @@ int colorbarlua_open(void)
 #ifdef IUPLUA_USELOH
 #ifdef TEC_BIGENDIAN
 #ifdef TEC_64
-#include "loh/luacolorbar_be64.loh"
+#include "loh/colorbar_be64.loh"
 #else
-#include "loh/luacolorbar_be32.loh"
+#include "loh/colorbar_be32.loh"
 #endif  
 #else
 #ifdef TEC_64
 #ifdef WIN64
-#include "loh/luacolorbar_le64w.loh"
+#include "loh/colorbar_le64w.loh"
 #else
-#include "loh/luacolorbar_le64.loh"
+#include "loh/colorbar_le64.loh"
 #endif  
 #else
-#include "loh/luacolorbar.loh"
+#include "loh/colorbar.loh"
 #endif  
 #endif  
 #else
