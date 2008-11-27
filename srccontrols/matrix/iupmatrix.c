@@ -791,7 +791,7 @@ static int iMatrixCreateMethod(Ihandle* ih, void **params)
   iMatrixAllocMatrix(ih);
 
   /* Create the edit fields */
-  //TODO: iMatrixEditCreate(ih);
+  /* TODO: iMatrixEditCreate(ih); */
 
   /* change the IupCanvas default values */
   iupAttribSetStr(ih, "SCROLLBAR", "YES");
