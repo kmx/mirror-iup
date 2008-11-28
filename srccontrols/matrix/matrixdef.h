@@ -109,6 +109,8 @@ struct _IcontrolData
 
   int YmaxC;  /* Current size canvas variables */
   int XmaxC;  /* set when a callback is called */
+
+  int resizematrix;
 };
 
 /* Prototypes to set the scrollbar */

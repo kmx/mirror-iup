@@ -59,7 +59,8 @@ static void iMatrixChangeMatrixWH(Ihandle* ih, int col, int largura, int m);
 int iMatrixColResTry(Ihandle* ih, int x, int y)
 {
   int found, width, col;
-  int ativo = !iupAttribGetInt(ih, "RESIZEMATRIX");
+  //int ativo = !iupAttribGetInt(ih, "RESIZEMATRIX");
+  int ativo = ih->data->resizematrix;
 
   if(ih->data->lin.titlewh && y < ih->data->lin.titlewh && ativo)
   {
@@ -175,7 +176,8 @@ static void iMatrixResetMatrixCursor(Ihandle* ih)
 */
 void iMatrixColResChangeCursor(Ihandle* ih, int x, int y)
 {
-  int ativo = !iupAttribGetInt(ih, "RESIZEMATRIX");
+  //int ativo = !iupAttribGetInt(ih, "RESIZEMATRIX");
+  int ativo = ih->data->resizematrix;
 
   if(ih->data->lin.titlewh && y < ih->data->lin.titlewh && ativo)
   {

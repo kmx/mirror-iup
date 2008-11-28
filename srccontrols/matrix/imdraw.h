@@ -27,10 +27,10 @@ char* iMatrixDrawGetBgColor(Ihandle* ih, int lin, int col);
 char* iMatrixDrawGetFont   (Ihandle* ih, int lin, int col);
 
 
-/* Formas de redesenhar a matriz, usadas por iMatrixDrawMatrix */
-#define IMATRIX_DRAW_ALL 0  /* Redesenha as colunas e linhas de titulos */
-#define IMATRIX_DRAW_COL 1  /* Redesenha somente as colunas de titulos */
-#define IMATRIX_DRAW_LIN 2  /* Redesenha somente as linas de titulos */
+/* Options to redraw the matrix, used by iMatrixDrawMatrix */
+#define IMATRIX_DRAW_ALL 0  /* Redraw the title columns and title lines */
+#define IMATRIX_DRAW_COL 1  /* Redraw only the title columns */
+#define IMATRIX_DRAW_LIN 2  /* Redraw only the title lines */
 
 
 #ifdef __cplusplus
