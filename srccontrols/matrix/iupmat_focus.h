@@ -5,8 +5,8 @@
  * $Id$
  */
  
-#ifndef __IMFOCUS_H 
-#define __IMFOCUS_H
+#ifndef __IUPMAT_FOCUS_H 
+#define __IUPMAT_FOCUS_H
 
 #ifdef __cplusplus
 extern "C" {

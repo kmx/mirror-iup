@@ -6,8 +6,8 @@
  * $Id$
  */
  
-#ifndef __IMEDIT_H 
-#define __IMEDIT_H
+#ifndef __IUPMAT_EDIT_H 
+#define __IUPMAT_EDIT_H
 
 #ifdef __cplusplus
 extern "C" {

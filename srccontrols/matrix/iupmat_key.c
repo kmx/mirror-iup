@@ -32,16 +32,16 @@
 #include "iup_controls.h"
 #include "iup_cdutil.h"
 
-#include "matrixdef.h"
-#include "matrixcd.h"
-#include "imdraw.h"
-#include "imscroll.h"
-#include "imfocus.h"
-#include "imaux.h"
-#include "imgetset.h"
-#include "imkey.h"
-#include "immark.h"
-#include "imedit.h"
+#include "iupmat_def.h"
+#include "iupmat_cd.h"
+#include "iupmat_draw.h"
+#include "iupmat_scroll.h"
+#include "iupmat_focus.h"
+#include "iupmat_aux.h"
+#include "iupmat_getset.h"
+#include "iupmat_key.h"
+#include "iupmat_mark.h"
+#include "iupmat_edit.h"
 
 
 /* keys that are not chars */

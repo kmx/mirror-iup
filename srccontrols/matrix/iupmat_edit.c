@@ -33,13 +33,13 @@
 #include "iup_layout.h"
 #include "iup_cdutil.h"
 
-#include "matrixdef.h"
-#include "imscroll.h"
-#include "imaux.h"
-#include "imfocus.h"
-#include "imedit.h"
-#include "imkey.h"
-#include "matrixcd.h"
+#include "iupmat_def.h"
+#include "iupmat_scroll.h"
+#include "iupmat_aux.h"
+#include "iupmat_focus.h"
+#include "iupmat_edit.h"
+#include "iupmat_key.h"
+#include "iupmat_cd.h"
 
 
 static int iMatrixCallDropdownCb(Ihandle* ih, int lin, int col)

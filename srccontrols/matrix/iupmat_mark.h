@@ -5,8 +5,8 @@
  * $Id$
  */
  
-#ifndef __IMMARK_H 
-#define __IMMARK_H
+#ifndef __IUPMAT_MARK_H 
+#define __IUPMAT_MARK_H
 
 #ifdef __cplusplus
 extern "C" {

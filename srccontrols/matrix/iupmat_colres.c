@@ -27,12 +27,12 @@
 #include "iup_controls.h"
 #include "iup_cdutil.h"
 
-#include "matrixcd.h"
-#include "matrixdef.h"
-#include "imdraw.h"
-#include "imaux.h"
-#include "imfocus.h"
-#include "imcolres.h"
+#include "iupmat_cd.h"
+#include "iupmat_def.h"
+#include "iupmat_draw.h"
+#include "iupmat_aux.h"
+#include "iupmat_focus.h"
+#include "iupmat_colres.h"
 
 #define IMATRIX_TOL       3
 

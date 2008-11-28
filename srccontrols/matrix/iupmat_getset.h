@@ -6,8 +6,8 @@
  * $Id$
  */
  
-#ifndef __IMGETSET_H 
-#define __IMGETSET_H
+#ifndef __IUPMAT_GETSET_H 
+#define __IUPMAT_GETSET_H
 
 #ifdef __cplusplus
 extern "C" {

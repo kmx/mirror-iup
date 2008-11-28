@@ -6,8 +6,8 @@
  * $Id$
  */
  
-#ifndef __IMMOUSE_H 
-#define __IMMOUSE_H
+#ifndef __IUPMAT_MOUSE_H 
+#define __IUPMAT_MOUSE_H
 
 #ifdef __cplusplus
 extern "C" {

@@ -29,11 +29,11 @@
 #include "iup_controls.h"
 #include "iup_cdutil.h"
 
-#include "matrixdef.h"
-#include "matrixcd.h"
-#include "imdraw.h"
-#include "imaux.h"
-#include "immark.h"
+#include "iupmat_def.h"
+#include "iupmat_cd.h"
+#include "iupmat_draw.h"
+#include "iupmat_aux.h"
+#include "iupmat_mark.h"
 
 /* Color attenuation factor in a marked cell */
 #define IMATRIX_ATENUATION_NO       1.0F

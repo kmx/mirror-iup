@@ -31,12 +31,12 @@
 #include "iup_controls.h"
 #include "iup_cdutil.h"
 
-#include "matrixdef.h"
-#include "matrixcd.h"
-#include "imdraw.h"
-#include "imscroll.h"
-#include "imaux.h"
-#include "immark.h"
+#include "iupmat_def.h"
+#include "iupmat_cd.h"
+#include "iupmat_draw.h"
+#include "iupmat_scroll.h"
+#include "iupmat_aux.h"
+#include "iupmat_mark.h"
 
 
 #define IMATRIX_MINMAX(a, b, min, max)  ((a > b) ? (min = b, max = a) : (min = a, max = b))

@@ -28,13 +28,13 @@
 #include "iup_controls.h"
 #include "iup_cdutil.h"
 
-#include "imdraw.h"
-#include "matrixdef.h"
-#include "imaux.h"
-#include "immem.h"
-#include "imfocus.h"
-#include "imedit.h"
-#include "matrixcd.h"
+#include "iupmat_draw.h"
+#include "iupmat_def.h"
+#include "iupmat_aux.h"
+#include "iupmat_mem.h"
+#include "iupmat_focus.h"
+#include "iupmat_edit.h"
+#include "iupmat_cd.h"
 
 /**************************************************************************/
 /*   Exported functions                                                   */

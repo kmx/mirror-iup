@@ -5,10 +5,10 @@
  * $Id$
  */
  
-#ifndef __MATRIXDEF_H 
-#define __MATRIXDEF_H
+#ifndef __IUPMAT_DEF_H 
+#define __IUPMAT_DEF_H
 
-#include "imdraw.h"
+#include "iupmat_draw.h"
 
 #ifdef __cplusplus
 extern "C" {

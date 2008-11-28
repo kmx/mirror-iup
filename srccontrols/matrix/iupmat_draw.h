@@ -6,8 +6,8 @@
  * $Id$
  */
  
-#ifndef __IMDRAW_H 
-#define __IMDRAW_H
+#ifndef __IUPMAT_DRAW_H 
+#define __IUPMAT_DRAW_H
 
 #ifdef __cplusplus
 extern "C" {
