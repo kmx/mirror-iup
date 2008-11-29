@@ -884,13 +884,15 @@ int iuplua_open(lua_State * L)
   iupspinlua_open(L);
   iupspinboxlua_open(L);
   iupcboxlua_open(L);
-
-#if (IUP_VERSION_NUMBER >= 300000)
   iupgclua_open(L);
   iupgetparamlua_open(L);
   iupvallua_open(L);
   iuptabslua_open(L);
-#endif
+  iupfontdlglua_open(L);
+  iupmessagedlglua_open(L);
+  iupcolordlglua_open(L);
+  iupimagergbalua_open(L);
+  iupimagergblua_open(L);
 
   iuplua_returnEnv(L);
 

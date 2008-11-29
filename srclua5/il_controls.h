@@ -21,13 +21,6 @@ int iupcellslua_open (lua_State * L);
 int iuptreelua_open (lua_State * L);
 int iupmatrixlua_open (lua_State * L);
 
-#if (IUP_VERSION_NUMBER < 300000)
-void iupgetparamlua_open (lua_State * L);
-int iupgclua_open (lua_State * L);
-int iupvallua_open (lua_State * L);
-int iuptabslua_open (lua_State * L);
-#endif
-
 #ifdef __cplusplus
 }
 #endif

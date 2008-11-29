@@ -17,13 +17,8 @@
 #include "iuplua.h"
 #include "il.h"
 
-#if (IUP_VERSION_NUMBER >= 300000)
 #include "iup_str.h"
 #include "iup_predial.h"
-#else
-#include "istrutil.h"
-#include "ipredial.h"
-#endif
 
 #define ALLOC(n,t)  ((t *)calloc((n),sizeof(t)))
 #define REQUIRE(b)  {if (!(b)) goto cleanup;}

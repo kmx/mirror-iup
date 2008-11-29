@@ -37,13 +37,16 @@ int iupcboxlua_open (lua_State * L);
 int iupspinboxlua_open (lua_State * L);
 int iupspinlua_open (lua_State * L);
 int iupsboxlua_open (lua_State * L);
-
-#if (IUP_VERSION_NUMBER >= 300000)
-void iupgetparamlua_open (lua_State * L);
 int iupgclua_open (lua_State * L);
 int iupvallua_open (lua_State * L);
 int iuptabslua_open (lua_State * L);
-#endif
+int iupfontdlglua_open(lua_State * L);
+int iupmessagedlglua_open(lua_State * L);
+int iupcolordlglua_open(lua_State * L);
+int iupimagergbalua_open(lua_State * L);
+int iupimagergblua_open(lua_State * L);
+
+void iupgetparamlua_open (lua_State * L);
 
 int iupluaScanf(lua_State *L);
 int iupluaapi_open(lua_State * L);

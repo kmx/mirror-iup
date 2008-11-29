@@ -23,11 +23,9 @@ int iupcontrolslua_open(void)
   cblua_open();
   colorbarlua_open();
   cellslua_open();
-#if (IUP_VERSION_NUMBER < 300000)
   vallua_open();
   tabslua_open();
   gclua_open();
   getparamlua_open();
-#endif
   return 1;
 }

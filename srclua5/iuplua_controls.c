@@ -32,13 +32,6 @@ int iupcontrolslua_open(lua_State * L)
   iupcellslua_open(L);
   iupcolorbarlua_open(L);
 
-#if (IUP_VERSION_NUMBER < 300000)
-  iupgclua_open(L);
-  iupgetparamlua_open(L);
-  iupvallua_open(L);
-  iuptabslua_open(L);
-#endif
-
   iuplua_returnEnv(L);
 
   return 0;

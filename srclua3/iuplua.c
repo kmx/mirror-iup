@@ -17,15 +17,12 @@
 
 #include "iuplua.h"
 #include "il.h"
-#if (IUP_VERSION_NUMBER >= 300000)
+
 #include "iup_str.h"
-#else
-#include "istrutil.h"
-#endif
+
 
 /* from iupkey.c */
 void iupKeyForEach(void (*func)(char *name, int code, void* user_data), void* user_data);
-
 
 static int iuplua_tag = 0;
 static lua_Object iuplua_namespace;
@@ -469,13 +466,10 @@ int iuplua_open(void)
   sboxlua_open();
   spinlua_open();
   cboxlua_open();
-
-#if (IUP_VERSION_NUMBER >= 300000)
   vallua_open();
   tabslua_open();
   gclua_open();
   getparamlua_open();
-#endif
 
   return 1;
 }

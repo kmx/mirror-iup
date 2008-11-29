@@ -21,13 +21,6 @@ int cblua_open (void);
 int colorbarlua_open (void);
 int cellslua_open(void);
 
-#if (IUP_VERSION_NUMBER < 300000)
-void iupgetparamlua_open (void);
-int iupgclua_open (void);
-int iupvallua_open (void);
-int iuptabslua_open (void);
-#endif
-
 #ifdef __cplusplus
 }
 #endif

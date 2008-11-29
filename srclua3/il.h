@@ -14,18 +14,17 @@ extern "C" {
 
 int iupluaapi_open(void);
 int iupluawidgets_open(int tag);
-void iupluaScanf(void);
 
 int sboxlua_open(void);
 int spinlua_open(void);
 int cboxlua_open(void);
 
-#if (IUP_VERSION_NUMBER >= 300000)
-void getparamlua_open (void);
 int gclua_open (void);
 int vallua_open (void);
 int tabslua_open (void);
-#endif
+
+void iupluaScanf(void);
+void getparamlua_open (void);
 
 /** First function called inside a callback. 
  * It prepares the stack for the call and returns the Lua state.
