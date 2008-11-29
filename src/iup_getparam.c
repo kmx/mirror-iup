@@ -441,14 +441,14 @@ static Ihandle* param_create_box(Ihandle* param)
       {
         float min = IupGetFloat(param, "MIN");
         if (min == 0)
-          IupSetAttribute(ctrl, "MASK", IUPMASK_UFLOAT);
+          IupSetAttribute(ctrl, "MASK", IUP_MASK_UFLOAT);
         else
           IupSetfAttribute(ctrl, "MASKFLOAT", "%f:%f", (double)min, (double)1.0e10);
         IupAppend(box, ctrl);
       }
       else
       {
-        IupSetAttribute(ctrl, "MASK", IUPMASK_FLOAT);
+        IupSetAttribute(ctrl, "MASK", IUP_MASK_FLOAT);
         IupAppend(box, ctrl);
       }
 
@@ -474,12 +474,12 @@ static Ihandle* param_create_box(Ihandle* param)
       {
         int min = IupGetInt(param, "MIN");
         if (min == 0)
-          IupSetAttribute(ctrl, "MASK", IUPMASK_UINT);
+          IupSetAttribute(ctrl, "MASK", IUP_MASK_UINT);
         else
           IupSetfAttribute(ctrl, "MASKINT", "%d:%d", min, 2147483647);
       }
       else                             
-        IupSetAttribute(ctrl, "MASK", IUPMASK_INT);
+        IupSetAttribute(ctrl, "MASK", IUP_MASK_INT);
 
       IupSetAttribute(param, "DATA_TYPE", "1");
       IupSetAttribute(ctrl, "SIZE", "50x");

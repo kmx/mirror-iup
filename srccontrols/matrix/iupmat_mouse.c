@@ -304,17 +304,14 @@ int iMatrixMouseButtonCB (Ihandle* ih, int b, int press, int x, int y, char* r)
 
   if(b == IUP_BUTTON1)
   {
-    if(press)
-    {
-      int duplo = isdouble(r);
-      iMatrixLeftPress(ih, x, y, isshift(r), iscontrol(r), duplo);
-    }
+    if (press)
+      iMatrixLeftPress(ih, x, y, iup_isshift(r), iup_iscontrol(r), iup_isdouble(r));
     else
       iMatrixLeftRelease(ih, x);
   }
   else if(b == IUP_BUTTON3)
   {
-    if(press)
+    if (press)
       iMatrixRightPress(ih, x, y);
     else
       iMatrixRightRelease(ih, x, y);
