@@ -893,6 +893,7 @@ int iuplua_open(lua_State * L)
   iupcolordlglua_open(L);
   iupimagergbalua_open(L);
   iupimagergblua_open(L);
+  iupprogressbarlua_open(L);
 
   iuplua_returnEnv(L);
 

@@ -372,6 +372,11 @@ static void CreateColorDlg(void)
   lua_pushusertag(IupColorDlg(), iuplua_tag);
 }
 
+static void CreateProgressBar(void)
+{
+  lua_pushusertag(IupProgressBar(), iuplua_tag);
+}
+
 static void CreateUser(void)
 {
   lua_pushusertag(IupUser(), iuplua_tag);
@@ -539,6 +544,7 @@ int iupluawidgets_open(int tag)
     { "iupCreateFill", CreateFill },
     { "iupCreateRadio", CreateRadio },
     { "iupCreateMenu", CreateMenu },
+    { "iupCreateProgressBar", CreateProgressBar },
 
     { "iup_action_timer", (lua_CFunction)timer_action},
     { "iup_action_text", (lua_CFunction)text_action},
