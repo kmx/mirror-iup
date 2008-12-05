@@ -68,16 +68,16 @@ static int GetParam(lua_State *L)
 
   for (i = 0; i < param_count; i++)
   {
-    char* t = IupGetParamType(f, &line_size);
+    char t = IupGetParamType(f, &line_size);
 
-    if (*t == 't') /* if separator */
+    if (t == 't') /* if separator */
     {
       f += line_size;
       i--; /* compensate next increment */
       continue;
     }
 
-    switch(*t)
+    switch(t)
     {
     case 'b':
     case 'i':
@@ -102,7 +102,7 @@ static int GetParam(lua_State *L)
       break;
     }
 
-    param_type[i] = *t;
+    param_type[i] = t;
     f += line_size;
   }
 
