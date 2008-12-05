@@ -3,7 +3,6 @@
  * IupScanf special implementation. 
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
 
 #include <stdio.h>

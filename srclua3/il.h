@@ -2,7 +2,6 @@
  * \brief iupLua internal declarations
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #ifndef __IL_H 

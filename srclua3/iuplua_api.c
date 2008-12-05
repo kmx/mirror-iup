@@ -2,7 +2,6 @@
  * \brief Iup API in Lua
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #include <string.h>

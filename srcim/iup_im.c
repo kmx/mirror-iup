@@ -2,7 +2,6 @@
  * \brief iupim utilities
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
 
 #include <im.h>

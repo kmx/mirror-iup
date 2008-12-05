@@ -2,7 +2,6 @@
  * \brief Bindig of iupcontrols to Lua 3.
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #include <lua.h>

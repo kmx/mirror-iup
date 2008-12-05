@@ -3,7 +3,6 @@
  * @author André Luiz Clinio.
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #include <stdlib.h>

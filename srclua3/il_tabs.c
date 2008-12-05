@@ -2,7 +2,6 @@
  * \brief Bindig of iuptabs to Lua 3.
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #include <stdlib.h>

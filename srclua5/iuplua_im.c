@@ -2,7 +2,6 @@
  * \brief IULUA core - Bindig of iup to Lua 5.
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
  
 #include "iup.h"

@@ -2,7 +2,6 @@
  * \brief IupGetParam
  *
  * See Copyright Notice in iup.h
- * $Id$
  */
 
 #include <stdio.h>
@@ -538,7 +537,7 @@ static Ihandle* iParamCreateBox(Ihandle* param)
         if (aux)
         {
           IupSetfAttribute(aux, "VALUE", "%g", (double)(iupAttribGetFloat(param, "VALUE")/RAD2DEG));
-          IupSetAttribute(aux, "SIZE", "50x12");
+          IupSetAttribute(aux, "SIZE", "50x10");
         }
       }
       else

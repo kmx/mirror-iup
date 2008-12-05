@@ -2,7 +2,6 @@
 * \brief IUP binding for Lua 5.
 *
 * See Copyright Notice in iup.h
-* $Id$
 */
 
 #include <stdio.h>
