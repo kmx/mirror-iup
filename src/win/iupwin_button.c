@@ -1,7 +1,7 @@
 /** \file
  * \brief Button Control
  *
- * See Copyright Notice in iup.h
+ * See Copyright Notice in "iup.h"
  */
 
 #include <windows.h>
@@ -102,7 +102,7 @@ static HBITMAP winButtonGetBitmap(Ihandle* ih, UINT itemState, int *shift)
     if (itemState & ODS_SELECTED && name)
     {
       attrib_name = "IMPRESS";
-      if (shift) *shift = 0;
+      if (shift && !iupAttribGetStr(ih, "IMPRESSBORDER")) *shift = 0;
     }
     else
     {
