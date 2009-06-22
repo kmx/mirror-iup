@@ -12,8 +12,6 @@
 extern "C" {
 #endif
 
-#define VERSION "2.6"
-
 typedef struct _elemlist {
   struct _elemlist *next;
   void         *data;
