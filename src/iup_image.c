@@ -219,13 +219,16 @@ void iupImageColorMakeInactive(unsigned char *r, unsigned char *g, unsigned char
   }
   else
   {
-    int ir, ig, ib, 
+    int ir = 0, ig = 0, ib = 0, 
       i = (*r+*g+*b)/3,
       bg_i = (bg_r+bg_g+bg_b)/3;
 
-    ir = (bg_r*i)/bg_i; 
-    ig = (bg_g*i)/bg_i; 
-    ib = (bg_b*i)/bg_i; 
+    if (bg_i)
+    {
+      ir = (bg_r*i)/bg_i; 
+      ig = (bg_g*i)/bg_i; 
+      ib = (bg_b*i)/bg_i; 
+    }
 
 #define LIGHTER(_c) ((255 + _c)/2)
     ir = LIGHTER(ir);
@@ -652,6 +655,7 @@ static Iclass* iImageGetClassBase(char* name, int (*create_func)(Ihandle* ih, vo
   ic->UnMap = iImageUnMapMethod;
 
   /* Attribute functions */
+  iupClassRegisterAttribute(ic, "WID", NULL, NULL, NULL, NULL, IUPAF_READONLY|IUPAF_NO_INHERIT|IUPAF_NO_STRING);
   iupClassRegisterAttribute(ic, "WIDTH", iImageGetWidthAttrib, NULL, NULL, NULL, IUPAF_READONLY|IUPAF_NOT_MAPPED|IUPAF_NO_INHERIT);
   iupClassRegisterAttribute(ic, "HEIGHT", iImageGetHeightAttrib, NULL, NULL, NULL, IUPAF_READONLY|IUPAF_NOT_MAPPED|IUPAF_NO_INHERIT);
   iupClassRegisterAttribute(ic, "RASTERSIZE", iupBaseGetRasterSizeAttrib, NULL, NULL, NULL, IUPAF_READONLY|IUPAF_NOT_MAPPED|IUPAF_NO_INHERIT);
