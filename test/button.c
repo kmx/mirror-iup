@@ -368,7 +368,9 @@ void ButtonTest(void)
 
   dlg = IupDialog(IupHbox(box1, label, box2, NULL));
   IupSetAttribute(dlg, "TITLE", "IupButton Test");
-//  IupSetAttribute(dlg, "BGCOLOR", "0 0 128");
+  IupSetAttribute(box1, "BGCOLOR", "128 0 0");
+//  IupSetAttribute(dlg, "BGCOLOR", "0 128 0");
+//  IupSetAttribute(dlg, "BACKGROUND", "0 0 128");
 //  IupSetAttributeHandle(dlg, "BACKGROUND", image2);
   IupSetAttributeHandle(dlg, "STARTFOCUS", button);
 
