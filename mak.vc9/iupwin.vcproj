@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="iupmot"
-	ProjectGUID="{2C7E83B9-1234-432A-97BA-FCF4D0728408}"
+	Name="iupwin"
+	ProjectGUID="{2C7E83B9-123A-BCDF-97BA-FCF4D0728408}"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="131072"
 	>
@@ -41,8 +41,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\src;..\src\mot;..\include;d:\lng\x11inc;D:\_goodies\iup\_libs\openmotif2.1.30\lib"
-				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0500;_WIN32_IE=0x0500;IUP_ASSERT;_CRT_SECURE_NO_DEPRECATE"
+				AdditionalIncludeDirectories="..\src;..\include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0500;_WIN32_IE=0x0500;WINVER=0x0500;IUP_ASSERT;_CRT_SECURE_NO_DEPRECATE;NOTREEVIEW"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
@@ -64,6 +64,9 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				AdditionalDependencies="iupcore.lib"
+				OutputFile="$(OutDir)\iup.lib"
+				AdditionalLibraryDirectories="$(OutDir)"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -86,14 +89,26 @@
 	</References>
 	<Files>
 		<Filter
-			Name="unix"
+			Name="inc"
 			>
 			<File
-				RelativePath="..\src\mot\iupunix_help.c"
+				RelativePath="..\src\win\iupwin_brush.h"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupunix_info.c"
+				RelativePath="..\src\win\iupwin_draw.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_drv.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_handle.h"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_info.h"
 				>
 			</File>
 		</Filter>
@@ -101,51 +116,51 @@
 			Name="src"
 			>
 			<File
-				RelativePath="..\src\mot\iupmot_color.c"
+				RelativePath="..\src\win\iupwin_brush.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_common.c"
+				RelativePath="..\src\win\iupwin_common.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_focus.c"
+				RelativePath="..\src\win\iupwin_draw.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_font.c"
+				RelativePath="..\src\win\iupwin_focus.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_globalattrib.c"
+				RelativePath="..\src\win\iupwin_font.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_key.c"
+				RelativePath="..\src\win\iupwin_globalattrib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_loop.c"
+				RelativePath="..\src\win\iupwin_handle.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_open.c"
+				RelativePath="..\src\win\iupwin_info.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_tips.c"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="inc"
-			>
-			<File
-				RelativePath="..\src\mot\iupmot_color.h"
+				RelativePath="..\src\win\iupwin_key.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_drv.h"
+				RelativePath="..\src\win\iupwin_loop.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_open.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_tips.c"
 				>
 			</File>
 		</Filter>
@@ -153,79 +168,79 @@
 			Name="src_controls"
 			>
 			<File
-				RelativePath="..\src\mot\iupmot_button.c"
+				RelativePath="..\src\win\iupwin_button.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_canvas.c"
+				RelativePath="..\src\win\iupwin_canvas.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_colordlg.c"
+				RelativePath="..\src\win\iupwin_colordlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_dialog.c"
+				RelativePath="..\src\win\iupwin_dialog.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_filedlg.c"
+				RelativePath="..\src\win\iupwin_filedlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_fontdlg.c"
+				RelativePath="..\src\win\iupwin_fontdlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_frame.c"
+				RelativePath="..\src\win\iupwin_frame.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_image.c"
+				RelativePath="..\src\win\iupwin_image.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_label.c"
+				RelativePath="..\src\win\iupwin_label.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_list.c"
+				RelativePath="..\src\win\iupwin_list.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_menu.c"
+				RelativePath="..\src\win\iupwin_menu.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_messagedlg.c"
+				RelativePath="..\src\win\iupwin_messagedlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_progressbar.c"
+				RelativePath="..\src\win\iupwin_progressbar.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_tabs.c"
+				RelativePath="..\src\win\iupwin_tabs.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_text.c"
+				RelativePath="..\src\win\iupwin_text.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_timer.c"
+				RelativePath="..\src\win\iupwin_timer.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_toggle.c"
+				RelativePath="..\src\win\iupwin_toggle.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_tree.c"
+				RelativePath="..\src\win\iupwin_tree.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\mot\iupmot_val.c"
+				RelativePath="..\src\win\iupwin_val.c"
 				>
 			</File>
 		</Filter>
