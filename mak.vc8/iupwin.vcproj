@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8,00"
-	Name="iupgtk"
-	ProjectGUID="{2C7E83B9-7FE8-5555-97BA-FCF4D0728408}"
+	Name="iupwin"
+	ProjectGUID="{2C7E83B9-123A-BCDF-97BA-FCF4D0728408}"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="131072"
 	>
@@ -41,8 +41,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\src;..\src\gtk;..\include;&quot;d:\lng\gtk\include\atk-1.0&quot;;d:\lng\gtk\include\cairo;&quot;d:\lng\gtk\include\glib-2.0&quot;;&quot;d:\lng\gtk\include\gtk-2.0&quot;;&quot;d:\lng\gtk\include\pango-1.0&quot;;&quot;d:\lng\gtk\lib\gtk-2.0\include&quot;;&quot;d:\lng\gtk\lib\glib-2.0\include&quot;"
-				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0500;_WIN32_IE=0x0500;IUP_ASSERT;_CRT_SECURE_NO_DEPRECATE;GTK_DISABLE_DEPRECATED"
+				AdditionalIncludeDirectories="..\src;..\include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;_WIN32_WINNT=0x0500;_WIN32_IE=0x0500;WINVER=0x0500;IUP_ASSERT;_CRT_SECURE_NO_DEPRECATE;NOTREEVIEW"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
@@ -65,6 +65,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="iupcore.lib"
+				OutputFile="$(OutDir)\iup.lib"
 				AdditionalLibraryDirectories="$(OutDir)"
 			/>
 			<Tool
@@ -88,46 +89,78 @@
 	</References>
 	<Files>
 		<Filter
-			Name="src"
+			Name="inc"
 			>
 			<File
-				RelativePath="..\src\gtk\iupgtk_common.c"
+				RelativePath="..\src\win\iupwin_brush.h"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_focus.c"
+				RelativePath="..\src\win\iupwin_draw.h"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_font.c"
+				RelativePath="..\src\win\iupwin_drv.h"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_globalattrib.c"
+				RelativePath="..\src\win\iupwin_handle.h"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_key.c"
-				>
-			</File>
-			<File
-				RelativePath="..\src\gtk\iupgtk_loop.c"
-				>
-			</File>
-			<File
-				RelativePath="..\src\gtk\iupgtk_open.c"
-				>
-			</File>
-			<File
-				RelativePath="..\src\gtk\iupgtk_tips.c"
+				RelativePath="..\src\win\iupwin_info.h"
 				>
 			</File>
 		</Filter>
 		<Filter
-			Name="inc"
+			Name="src"
 			>
 			<File
-				RelativePath="..\src\gtk\iupgtk_drv.h"
+				RelativePath="..\src\win\iupwin_brush.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_common.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_draw.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_focus.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_font.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_globalattrib.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_handle.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_info.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_key.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_loop.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_open.c"
+				>
+			</File>
+			<File
+				RelativePath="..\src\win\iupwin_tips.c"
 				>
 			</File>
 		</Filter>
@@ -135,79 +168,79 @@
 			Name="src_controls"
 			>
 			<File
-				RelativePath="..\src\gtk\iupgtk_button.c"
+				RelativePath="..\src\win\iupwin_button.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_canvas.c"
+				RelativePath="..\src\win\iupwin_canvas.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_colordlg.c"
+				RelativePath="..\src\win\iupwin_colordlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_dialog.c"
+				RelativePath="..\src\win\iupwin_dialog.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_filedlg.c"
+				RelativePath="..\src\win\iupwin_filedlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_fontdlg.c"
+				RelativePath="..\src\win\iupwin_fontdlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_frame.c"
+				RelativePath="..\src\win\iupwin_frame.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_image.c"
+				RelativePath="..\src\win\iupwin_image.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_label.c"
+				RelativePath="..\src\win\iupwin_label.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_list.c"
+				RelativePath="..\src\win\iupwin_list.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_menu.c"
+				RelativePath="..\src\win\iupwin_menu.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_messagedlg.c"
+				RelativePath="..\src\win\iupwin_messagedlg.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_progressbar.c"
+				RelativePath="..\src\win\iupwin_progressbar.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_tabs.c"
+				RelativePath="..\src\win\iupwin_tabs.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_text.c"
+				RelativePath="..\src\win\iupwin_text.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_timer.c"
+				RelativePath="..\src\win\iupwin_timer.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_toggle.c"
+				RelativePath="..\src\win\iupwin_toggle.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_tree.c"
+				RelativePath="..\src\win\iupwin_tree.c"
 				>
 			</File>
 			<File
-				RelativePath="..\src\gtk\iupgtk_val.c"
+				RelativePath="..\src\win\iupwin_val.c"
 				>
 			</File>
 		</Filter>
