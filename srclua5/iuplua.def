@@ -16,7 +16,6 @@ EXPORTS
   iupkey_open
   iuplua_opencall_internal
   luaopen_iuplua
-  luaopen_iuplua51
   iuplua_register
   iuplua_regstring
   iuplua_checkstring_array
