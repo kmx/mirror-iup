@@ -39,7 +39,7 @@ struct _Telem {
   int     elemidx;
   char   *codename;
   union {
-    struct { int w, h; } image;
+    struct { int w, h, d; } image;
   } data;
 };
 
