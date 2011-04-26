@@ -9,3 +9,4 @@ docs
 umake_uname.bat
 release
 beta
+*.old
