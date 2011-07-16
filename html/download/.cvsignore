@@ -1,14 +1,7 @@
 iup.chm
-iup.pdf
-IupTreeUtil.tar.gz
-RSS_GUI.zip
-rss_gui.html
-RSS_GUI_0_5.zip
-IupTreeUtil3.tar.gz
-IupTreeUtil3.zip
-IupTreeUtil2.tar.gz
-iupcdim_wlua2009_en.pdf
-iup_sdj2005.pdf
+*.pdf
+RSS_GUI*
+IupTreeUtil*
 install_dev
 install
 config_lua_module
