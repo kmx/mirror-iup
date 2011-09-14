@@ -5047,6 +5047,7 @@ void IupMglPlotOpen(void)
 
 To Release:
   LoadFont
+  document DS_MODE Options
   Legend  
 
 Next Version:
