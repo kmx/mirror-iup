@@ -1,6 +1,7 @@
 iup.chm
 *.pdf
 RSS_GUI*
+rss_gui.*
 IupTreeUtil*
 install_dev
 install
