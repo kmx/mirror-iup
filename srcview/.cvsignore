@@ -2,6 +2,7 @@ iupview.bat
 so_locations
 *.dep
 *.wdep
+*.cdep
 *.loh
 .plan
 .project

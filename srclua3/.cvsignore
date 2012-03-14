@@ -1,6 +1,7 @@
 so_locations
 *.dep
 *.wdep
+*.cdep
 .plan
 .project
 *.err
