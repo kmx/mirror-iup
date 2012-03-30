@@ -62,7 +62,7 @@ void    cleanlist( Tlist* l );
 
 void decl( Telem* e );
 
-void use( char* name );
+void checkused( char* name );
 void named( char* name );
 
 void init(void);
@@ -76,6 +76,7 @@ extern char* filename;
 extern char* outname;
 extern char* funcname;
 extern int   nocode;
+extern int   static_image;
 
 #ifdef __cplusplus
 }
