@@ -1,0 +1,14 @@
+.plan
+.project
+dist
+bin
+lib
+obj
+to_do.txt
+docs
+umake_uname.bat
+release
+beta
+*.old
+mak.dll9
+mak.vc11
