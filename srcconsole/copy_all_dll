@@ -31,6 +31,7 @@ Copy_DLLs()
   
   #Remove Lua3 files if any
   rm -f ../bin/$SYS/Lua$LUA_SFX/*3.dll
+  
   #Remove Lua5.x from .Y folder
   if [ $LUA_SFX == 5.1 ]; then
     rm -f ../bin/$SYS/Lua$LUA_SFX/*52.dll
